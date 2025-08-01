@@ -1,0 +1,64 @@
+import { useState, useEffect } from "react";
+
+const SearchPosts = () => {
+  const [query, setQuery] = useState("");
+  const [results, setResults] = useState([]);
+
+  const handleSearch = async () => {
+    if (query.trim() === "") {
+      setResults([]); // Limpiar resultados si no hay texto en la búsqueda
+      return;
+    }
+    try {
+      const response = await fetch(`/wp-json/wp/v2/posts?search=${query}&_embed`);
+      const data = await response.json();
+      setResults(data);
+    } catch (error) {
+      console.error("Error buscando posts:", error);
+    }
+  };
+
+  useEffect(() => {
+    handleSearch();
+  }, [query]);
+
+  return (
+    <div className="flex flex-col items-center justify-start min-h-screen p-6 bg-base-200">
+      <div className="w-full max-w-md">
+        <input
+          type="text"
+          placeholder="Buscar..."
+          className="input input-bordered w-full text-lg shadow-md"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+        />
+      </div>
+      <ul className="mt-4 w-full max-w-md bg-base-100 rounded-lg shadow-lg overflow-hidden divide-y divide-base-300">
+        {results.length > 0 ? (
+          results.map((post) => (
+            <li key={post.id} className="p-3 hover:bg-base-300 transition">
+              {post._embedded && post._embedded["wp:featuredmedia"] && post._embedded["wp:featuredmedia"][0] && (
+                <div className="aspect-w-16 aspect-h-9 mb-2 overflow-hidden rounded-lg">
+                  <img
+                    src={post._embedded["wp:featuredmedia"][0].source_url}
+                    alt={post.title.rendered}
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+              )}
+              <a href={post.link} className="text-primary hover:underline block text-center">
+                {post.title.rendered}
+              </a>
+            </li>
+          ))
+        ) : (
+          query && (
+            <li className="p-3 text-center text-gray-500">No se encontraron resultados</li>
+          )
+        )}
+      </ul>
+    </div>
+  );
+};
+
+export default SearchPosts;

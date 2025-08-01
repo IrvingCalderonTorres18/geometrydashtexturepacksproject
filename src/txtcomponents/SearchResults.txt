@@ -1,0 +1,63 @@
+import React from "react";
+
+const SearchResults = ({ posts }) => {
+  return (
+    <div className="space-y-6 mt-6 w-4/5 mx-auto transition-all duration-500 ease-in-out">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        {posts.map((post) => (
+          <a
+            key={post.id}
+            href={post.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group block bg-gray-900 p-5 rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300"
+          >
+            {/* Imagen destacada en formato 16:9 */}
+            {post._embedded?.["wp:featuredmedia"]?.[0]?.source_url && (
+              <div className="w-full aspect-w-16 aspect-h-9">
+                <img
+                  src={post._embedded["wp:featuredmedia"][0].source_url}
+                  alt={post.title.rendered}
+                  className="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+            )}
+
+            {/* Título con hover en color #00FFFF */}
+            <h2 className="text-xl font-bold text-[#7DFF00] mt-3 transition-colors duration-300 group-hover:text-[#00FFFF]">
+              {post.title.rendered}
+            </h2>
+
+            {/* Tags */}
+            {post.tagNames && post.tagNames.length > 0 && (
+              <div className="flex flex-wrap mt-3">
+                {post.tagNames.slice(0, 5).map((tag, index) => (
+                  <span
+                    key={index}
+                    className="flex items-center bg-gray-700 text-white text-xs px-2 py-1 rounded-full mr-2 mb-1"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-3 w-3 mr-1 text-gray-300"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M4 2a2 2 0 00-2 2v3.586a2 2 0 00.586 1.414l7 7a2 2 0 002.828 0l3.586-3.586a2 2 0 000-2.828l-7-7A2 2 0 007.586 2H4zm2 2a1 1 0 100 2 1 1 0 000-2z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            )}
+          </a>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default SearchResults;

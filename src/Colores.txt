@@ -1,0 +1,309 @@
+Light Red
+Pastel Red
+Bright Red
+Red
+Dark Red
+Deep Red
+Wine Red
+Very Dark Red
+Magenta Red
+Red Brown
+Burnt Red
+Earthy Red
+Soft Orange
+Warm Orange
+Orange
+Reddish Orange
+Dark Orange
+Earth Orange
+Wood Orange
+Deep Orange
+Burnt Orange
+Clay Orange
+Rust Orange
+Dark Orange
+Pastel Yellow
+Light Yellow
+Yellow
+Olive Yellow
+Golden Yellow
+Deep Yellow
+Mustard Yellow
+Yellow Brown
+Sand Yellow
+Clay Yellow
+Dark Yellow
+Earth Yellow
+Pastel Green
+Apple Green
+Neon Green
+Green
+Lime Green
+Leaf Green
+Moss Green
+Emerald Green
+Aqua Green
+Dark Green
+Deep Green
+Forest Green
+Pale Mint
+Mint Ice
+Tuquoise Cyan
+Cyan
+Pale Seafoam Cyan
+Deep Cyan
+Dark Cyan
+Ocean Cyan
+Forest Cyan
+Dark Teal Cyan
+Charcoal Cyan
+Deep Ocean Cyan
+Sky Blue
+Neon Blue
+Strong Blue
+Blue
+Deep Blue
+Navy Blue
+Electric Blue
+Dark Blue
+Ocean Blue
+Deep Ocean Blue
+Midnight Blue
+Blue Almost Black
+Pastel Purple
+Strong Purple
+Purple
+Deep Purple
+Lavender Purple
+Dark Purple
+Deep Violet
+Midnight Purple
+Bluish Purple
+Grape Purple
+Dark Slate Purple
+Wine Purple
+Light Pink
+Pink
+Dark Pink
+Intense Wine
+Magenta
+Bright Purple
+Dark Magenta
+Indigo Purple
+Bright Lavender
+Dark Lavender
+Deep Lavender
+Deep Lavender Dark
+Light Blue
+Steel Blue
+Petrol Blue
+Night Blue
+White
+Light Gray
+Medium Gray
+Dark Gray
+Gray
+Charcoal Gray
+Black
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Red
+Orange
+Yellow
+Green
+Cyan
+Blue
+Purple
+Pink
+White
+Gray
+Black
+RGB
+Transparent
+Light Red
+Pastel Red
+Bright Red
+Dark Red
+Deep Red
+Wine Red
+Very Dark Red
+Magenta Red
+Red Brown
+Burnt Red
+Earthy Red
+Soft Orange
+Warm Orange
+Reddish Orange
+Dark Orange
+Earth Orange
+Wood Orange
+Deep Orange
+Burnt Orange
+Clay Orange
+Rust Orange
+Dark Orange
+Pastel Yellow
+Light Yellow
+Olive Yellow
+Golden Yellow
+Deep Yellow
+Mustard Yellow
+Yellow Brown
+Sand Yellow
+Clay Yellow
+Dark Yellow
+Earth Yellow
+Pastel Green
+Apple Green
+Neon Green
+Lime Green
+Leaf Green
+Moss Green
+Emerald Green
+Aqua Green
+Dark Green
+Deep Green
+Forest Green
+Pale Mint
+Mint Ice
+Tuquoise Cyan
+Pale Seafoam Cyan
+Deep Cyan
+Dark Cyan
+Ocean Cyan
+Forest Cyan
+Dark Teal Cyan
+Charcoal Cyan
+Deep Ocean Cyan
+Sky Blue
+Neon Blue
+Strong Blue
+Deep Blue
+Navy Blue
+Electric Blue
+Dark Blue
+Ocean Blue
+Deep Ocean Blue
+Midnight Blue
+Blue Almost Black
+Pastel Purple
+Strong Purple
+Deep Purple
+Lavender Purple
+Dark Purple
+Deep Violet
+Midnight Purple
+Bluish Purple
+Grape Purple
+Dark Slate Purple
+Wine Purple
+Light Pink
+Dark Pink
+Intense Wine
+Magenta
+Bright Purple
+Dark Magenta
+Indigo Purple
+Bright Lavender
+Dark Lavender
+Deep Lavender
+Deep Lavender Dark
+Light Blue
+Steel Blue
+Petrol Blue
+Night Blue
+Light Gray
+Medium Gray
+Dark Gray
+Charcoal Gray

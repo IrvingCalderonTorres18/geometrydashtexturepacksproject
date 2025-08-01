@@ -1,0 +1,304 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+  text-align: center;
+  width: 100%;
+  min-width: 260px;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  /*margin-top: -7rem;*/
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  width: 83vw;
+  min-width: 260px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  justify-content: flex-start;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.contenedor-fix{
+  display:flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100%;
+  min-width: 260px;
+  height: auto;
+}
+
+
+.container-1 {
+  display: block;
+  width: 90vw;
+  height: auto; /* Esto asegura que ocupe toda la altura del viewport */
+  justify-content: flex-start; /* Alinea el contenido hacia la parte superior */
+  align-items: flex-start; /* Esto elimina el centrado vertical */
+  align-content: flex-start; /* Alinea los elementos hacia arriba */
+}
+
+.container-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.container-3 {
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilo personalizado para el input */
+.custom-input {
+  width: 3.5rem; /* Ajusta el tamaño */
+  max-width: 4rem; /* Ajusta el tamaño máximo */
+  text-align: center;
+  border: 2px solid #4b5563; /* Color del borde */
+  background-color: #1f2937; /* Color de fondo */
+  color: white; /* Color del texto */
+  height: 2rem; /* Altura */
+  border-radius: 4.5rem; /* Borde redondeado */
+  padding: 0.5rem; /* Espaciado interno */
+  font-size: 1rem; /* Tamaño de la fuente */
+  outline: none; /* Quita el borde de enfoque predeterminado */
+  transition: border-color 0.3s ease; /* Transición suave para el borde */
+}
+
+/* Estilo al enfocar el input */
+.custom-input:focus {
+  border-color: #10b981; /* Color de borde al enfocar */
+  box-shadow: 0 0 5px rgba(16, 185, 129, 0.5); /* Sombra de enfoque */
+}
+
+.custom-search {
+  display: flex;
+  align-items: center;
+  border: 2px solid #4a5568; /* Borde gris oscuro permanente */
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: transparent;
+  color: white;
+  height: auto;
+  width: 75%;
+  /*background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1));*/
+}
+
+.custom-search input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  flex-grow: 1;
+  font-size: 16px;
+}
+
+.custom-search svg {
+  width: 20px;
+  height: 20px;
+  opacity: 0.7;
+  margin-right: 8px;
+}
+
+.contenedor-global{
+display:block;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: auto;
+min-width: 200px;
+margin-top: 60px;
+}
+
+.contenedor-searchbar{
+  display: flex;
+  justify-content: center;
+  height:3.5rem;
+  width: 100%;
+  min-width: 100%;
+}
+/*
+.contenedor-searchbar-glow {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-width: 100%;
+  height: 3.5rem;
+  z-index: 0;
+}
+
+.contenedor-searchbar-glow::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #00FFFF, #7DFF00);
+  filter: blur(20px);
+  opacity: 0.6;
+  border-radius: 9999px; 
+  z-index: -1; 
+}
+
+*/
+
+.contenedor-entries{
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  min-width: 100%;
+}
+
+.btn-filters{
+  margin-right: -2px;
+  height: auto;
+  width: 14%;
+  border-radius: 8px 0px 0px 8px;
+  border: 2px solid #4a5568;
+  font-size: 18px;
+}
+
+.btn-search-enter{
+  height: auto;
+  border: 2px solid #4a5568;
+  border-radius: 0px 8px 8px 0px;
+  width: 11%;
+  font-size: 18px;
+}
+
+.text-search{
+  font-size: 16px !important;
+}
+
+.icons-opacity{
+  display: flex;
+}
+.icon-hidden{
+  display: none;
+}
+.placeholder-hidden{
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .btn-filters {
+    width: auto;
+    
+  }
+  .btn-search-enter {
+    width: auto;
+  }
+  .text-search{
+    font-size: 12px!important;
+  }
+  .icons-opacity{
+    display: none !important;
+  }
+  .icon-hidden{
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .contenedor-searchbar{
+    height: 3rem;
+  }
+}
+
+@media (max-width: 480px){
+  .text-search{
+    font-size: 10px !important;
+  }
+}
+
+@media (max-width: 320px){
+  .placeholder-hidden{
+    display: none !important;
+  }
+  .contenedor-fix{
+    justify-content: flex-start !important;
+  }
+  .App-header{
+    width: 100%;
+  }
+}
+
+.tag-bg{
+  background: #485563;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(60deg, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(60deg, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   }
+
+.container-pag{
+  width: 100%;
+  display: block;
+}
+
+.pagination{
+  display:flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.pag-white{
+  color:white !important;
+}
+
+
+@keyframes pulseNew {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.new-animation {
+  animation: pulseNew 1.5s infinite ease-in-out;
+}
+
+.llll {
+  --color-alto: #79145c;
+  --color-medio-alto: #60186c;
+  --color-medio: #641d70;
+  --color-normal: #634db0;
+  --color-base-blue: #321761;
+  --color-base: #c0c0c0;
+  --text-color-bold: #757575;
+  --text-color: #616161;
+  --tamanio-fuente: 14px;
+  --color-light: #ffffff;
+}
